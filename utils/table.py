@@ -1,15 +1,18 @@
 class Seat:
      #This is a seat
-
-    def __init__(self):
+    ''' > this is a docstring
+    creates object Seat
+    
+    '''
+    def __init__(self): # gives empty string in case seat is unassigned
         self.free = True        
         self.occupant = ""
     
-    def set_occupant(self,name):
+    def set_occupant(self,name): # in case seat is free, assign someone 
         self.free = False
         self.occupant = name
    
-    def remove_occuptant(self):
+    def remove_occuptant(self): # removes occupant from seat > return it into empty string
         self.free = True
         self.occupant = ""
 
