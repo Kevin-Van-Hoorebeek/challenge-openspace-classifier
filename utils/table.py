@@ -1,4 +1,5 @@
 class Seat:
+     #This is a seat
 
     def __init__(self):
         self.free = True        
@@ -12,31 +13,30 @@ class Seat:
         self.free = True
         self.occupant = ""
 
-class Table:
+class Table: 
+    # This is a table
     
     def __init__(self):
         self.capacity = 4
-        self.seat = []
-        for i in range(self.capacity):
-           self.seats.append(Seat())
+        self.seats = [Seat() for _ in range(self.capacity)]
 
-    
     def has_free_spot(self):
-        
-        for i in self.seat:
-         if i.free == True:
-            return True
-         break
+    #     for seat in self.seats:
+    #         if seat in self.seats == True:
+    #             return True
+    #         else:
+    #             return False
+        return self.capacity - self.left_capacity() > 0
 
     def assign_seat(self, name):
-        self.assign_seat = name 
+        for seat in self.seats:
+            if seat in self.seats == True:
+                seat.set_occupant(name)
+                return True
+            else:
+                return False
     
     def left_capacity(self):
-       if self.left_capacity == int(0):
-        return False
-       elif self.left_capacity > int(0):
-        return True
-        pass
-
-
-        pass
+       sum(int(1 for seat in self.seats == True))
+           
+pass
