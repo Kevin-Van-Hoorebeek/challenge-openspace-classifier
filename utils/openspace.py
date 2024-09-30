@@ -1,13 +1,6 @@
-
-import sys
-import os
-import csv
 import random
+from table import Table
 
-sys.path.append(os.path.abspath("openspace-organizer/utils"))
-
-from table import *
-from openspace import *
 
 class Openspace:
     def __init__(self, tables, number_of_tables):
@@ -15,13 +8,19 @@ class Openspace:
         self.number_of_tables = number_of_tables
 
 def organize(names): # assign seats at random till seats are filled up
-    random.shuffle(csv)
-    for name in csv:
-        
-        pass
+    random_names = random.shuffle(names)
+    number_of_tables = 6
+    number_of_tables_list = [Table(i) for i in range(number_of_tables)]
+    random_names.assign_seat in number_of_tables_list
+    return number_of_tables_list
+
     
 
-def display(self):
+def display(self): # display output
+    self.display = 
+    
+    
+    
     pass
 
 

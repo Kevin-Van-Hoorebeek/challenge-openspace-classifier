@@ -35,11 +35,9 @@ class Table:
         for seat in self.seats:
             if seat in self.seats == True:
                 seat.set_occupant(name)
-                return True
-            else:
-                return False
+                break
     
     def left_capacity(self):
-       sum(int(1 for seat in self.seats == True))
+       sum(int(1 for self.has_free_spot in self.seats))
            
 pass
